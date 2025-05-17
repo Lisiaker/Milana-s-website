@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.navbar {
+    background: rgb(122, 112, 133);
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 3%;
+    padding-right: 20px;
+    flex-wrap:wrap;
+    position:static;
+}
+header .navbar {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .nav-menu {
+    display: flex;
+    gap: 18px;
+}
+.navbar .nav-menu .nav-link {
+    color: wheat;
+    font-size: 12px;
+}
+.navbar .nav-logo .logo-text {
+    color: wheat;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+.navbar .nav-menu .nav-link:hover {
+    opacity: 0.6;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: #c8bfd2;
+    padding-left: 10%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-right: 8%;
+    display: flex;
+    align-items: center;
+}
+.hero-section .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(122, 112, 133);
+    width: 100%;
+    gap: 40px;
+}
+
+.hero-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 100%;
+}
+
+.hero-section .hero-details .title {
+    font-size: 40px;
+    color:rgb(4, 4, 66);
+}
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    border: 2px solid wheat;
+    color: rgb(122, 112, 133);
+    border-radius: 20px;
+    transition: 0.3s ease;
+    background: transparent;
+
+}
+.hero-section .hero-details .buttons {
+    display: flex;
+    margin-top: 40px;
+    gap: 23px;
+    flex-wrap: wrap;
+}
+.hero-section .hero-details .button:hover {
+    background: wheat;
+}
+
+
+.card {
+   border: 2px solid;
+   background-color: wheat;
+   max-width: 350px;
+   padding-left: 13px;
+   padding-right: 13px;
+   border-color: wheat;
+   border-radius: 20px;
+   margin-top: 20px;
+   color: rgb(4, 4, 66);
+   text-align: center;
+   flex-shrink: 0;
+   width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero-section .section-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .hero-details {
+        max-width: 60%;
+    }
+
+    .card {
+        width: 350px;
+    }
+}
+
+.info-center {
+    min-height: 100vh;
+    background: rgb(122, 112, 133);
+    padding-left: 10%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-right: 8%;
+}
+ 
+
+
+.matrix-def {
+    color: wheat;
+}
+.arcana-def {
+    margin-top: 50px;
+}
+.black {
+    color: rgb(4, 4, 66);
+}
+
+
+
+.matrix-explained {
+    width: max-content; /* content defines width */
+    margin-left: 20px; /* stick to the left side with spacing */
+}
+
+.image,
+.key {
+    width: 350px;
+}
+
+.matrix-img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.key {
+    margin-top: 10px;
+    padding: 12px 16px;
+    color: wheat;
+    border: 2px solid;
+    border-color: wheat;
+    background: none;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: left;
+    box-sizing: 350px;
+}
+
+.arcanas {
+    padding: 50px 0 100px;
+    background-color: #c8bfd2;
+}
+
+.name {
+    color: rgb(4, 4, 66);
+}
+
+.arcanas .arcanas-list {
+    display: flex;
+    padding: 35px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.arcanas .arcanas-list .card-img {
+    width: 150px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.arcanas .arcanas-list .name {
+    margin-bottom: 16px;
+    font-size: 23px;
+}
+
+.arcanas .arcanas-list .dif {
+    line-height: 25px;
+}
+
+.slider-container swiper {
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.arcanas-c swiper-slide {
+  background: #fff;
+  border-radius: 10px;
+  width: 300px; /* or whatever fits your design */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000; /* or any color you prefer */
+}
+
+.section-title {
+    text-align: center;
+    color:rgb(4, 4, 66);
+}
+
+.members {
+    background-color: rgb(122, 112, 133);
+    padding-top: 50px;
+    padding-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img {
+    width: 140px;
+    border-radius: 70px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.m_name {
+    color: wheat;
+}
+.occupation {
+    width: 140px;
+    color: #c8bfd2;
+    align-items: center;
+}
+
+.us {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+}
+.yana, .ivanna, .alina, .milana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .us {
+        flex-direction: row; /* arrange in a row */
+        justify-content: center;
+    }
+}
+.section-members {
+    text-align: center;
+    color:rgb(4, 4, 66);
+}
